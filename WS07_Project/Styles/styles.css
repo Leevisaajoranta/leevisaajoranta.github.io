@@ -1,0 +1,459 @@
+    * {
+        box-sizing: border-box;
+    }
+   
+   
+   body {
+        height: 100%;
+        background-color: rgb(255, 244, 206);
+        margin: 0;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    header {
+        background-color: rgba(30, 53, 25, 0.781);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 70px;
+        position: relative;
+        overflow-x: hidden;
+      }
+      
+
+    header h1 {
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        transform: translateX(-50%);
+        margin: 0;
+        font-size: 3rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(230, 230, 230);
+    }
+
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+
+    nav {
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 50px;
+    }
+
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 23px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    nav a:hover {
+        color: wheat;
+    }
+
+    .slideshow-container {
+        max-width: 700px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: #0c0c0ccc;
+    }
+
+.text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4;}
+        to {opacity: 1;}
+    }
+
+    .slideshow-container2 {
+        max-width: 700px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: #0c0c0ccc;
+    }
+
+.text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .4;}
+        to {opacity: 1;}
+    }
+
+
+   .etusivu-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.text-section {
+    flex: 1;
+    padding-left: 0;
+}
+
+.h2.page-title {
+    font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 40px;
+}
+
+.intro {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+.viikonhauva {
+    margin-left: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    height: 800px;
+    width: 420px;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+    top: 500px;
+}
+
+.viikonhauva p {
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.yhteydenotto {
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    font-size: 30px;
+    background-color: #ffffff;
+    height: 400px;
+    width: 700px;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+    top: 100px;
+}
+
+.kerro-kuka-olet {
+    color: black;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+
+.transition-button {
+        background-color: #f7f7f7;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .transition-button:hover {
+        background-color: rgba(2, 199, 18, 0.473);
+      }
+
+.content {
+  min-height: calc(100vh - 60px);
+}
+
+footer {
+        background-color: rgba(30, 53, 25, 0.781);
+        color: wheat;
+        text-align: center;
+        padding: 20px;
+        height: 60px;
+    }
+
+.box-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 125px;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 10px;
+  
+}
+
+.box {
+  background-color: rgba(30, 53, 25, 0.781);
+  padding: 30px;
+  text-align: center;
+  color: wheat;
+  font-size: 40px;
+  border-radius: 8px;
+}
+
+.box-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+.box2 {
+    background-color: rgba(30, 53, 25, 0.705);
+    padding: 30px;
+    text-align: center;
+    color: wheat;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .box-grid, .box-column {
+      grid-template-columns: 1fr;
+    }
+  
+    .etusivu-main {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .text-section {
+      padding-left: 0;
+    }
+  
+    .viikonhauva {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .ajankohtaista { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    height: 400px;
+    width: 400px;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+    top: -800px;
+    left: 30px;
+}
+
+.ajankohtaista p {
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.Koira-vinkki { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    height: 300px;
+    width: 400px;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+    top: -750px;
+    left: 30px;
+}
+
+.Koira-vinkki p {
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.koiragalleria {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.koiragalleria2 {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
