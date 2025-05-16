@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Koira sivusto</title>
+  <link rel="icon" href="./Kuvat/koiralogo.png" />
+  <link rel="stylesheet" href="./Styles/styles.css" />
+</head>
+<body class="Kuvagalleria">
+  <header>
+    <h1>Koira sivusto</h1>
+    <div class="logo">
+      <img src="./Kuvat/koiralogo.png" style="max-width: 100%; height: 90px;" alt="Koira sivusto logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Etusivu</a></li>
+        <li><a href="./Tietoja.html">Tietoja</a></li>
+        <li><a href="./Kuvagalleria.html">Kuvagalleria</a></li>
+        <li><a href="./Yhteydenotto.html">Ota yhteyttä</a></li>
+      </ul>
+    </nav>
+  </header>
+    <h2 class="page-title">Koira galleria</h2>
+
+  <main>
+    <div class="koiragalleria">
+        <h2>Yleisimpiä koirarotuja</h2>
+    </div>
+
+    <div class="slideshow-container" id="carousel1">
+        <div class="mySlides1 fade">
+          <div class="numbertext">1/4</div>
+          <img src="./Kuvat/labbis2.png" style="width: 100%" alt="Labradorinnoutaja"/>
+          <div class="text">Labradorinnoutaja</div>
+        </div>
+
+        <div class="mySlides1 fade">
+          <div class="numbertext">2/4</div>
+          <img src="./Kuvat/kultainen2.png" style="width: 100%" alt="Kultainennoutaja"/>
+          <div class="text">Kultainennoutaja</div>
+        </div>
+
+        <div class="mySlides1 fade">
+          <div class="numbertext">3/4</div>
+          <img src="./Kuvat/suomenlapin2.png" style="width: 100%" alt="Suomenlapinkoira"/>
+          <div class="text">Suomenlapinkoira</div>
+        </div>
+
+        <div class="mySlides1 fade">
+          <div class="numbertext">4/4</div>
+          <img src="./Kuvat/saksanpaimen2.png" style="width: 100%" alt="Saksanpaimenkoira"/>
+          <div class="text">Saksanpaimenkoira</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot1" onclick="currentSlide(1)"></span>
+        <span class="dot1" onclick="currentSlide(2)"></span>
+        <span class="dot1" onclick="currentSlide(3)"></span>
+        <span class="dot1" onclick="currentSlide(4)"></span>
+      </div>
+
+      <div class="koiragalleria2">
+        <h2>Muita koiria</h2>
+    </div>
+
+      <div class="slideshow-container" id="carousel2">
+        <div class="mySlides2 fade">
+          <div class="numbertext">1/4</div>
+          <img src="./Kuvat/svemppa3.png" alt="Westie" style="width: 100%" />
+          <div class="text">Länsiylämaanterrieri</div>
+        </div>
+
+        <div class="mySlides2 fade">
+          <div class="numbertext">2/4</div>
+          <img src="./Kuvat/ilona2.png" alt="Kääpiösnautseri" style="width: 100%" />
+          <div class="text">Kääpiösnautseri</div>
+        </div>
+
+        <div class="mySlides2 fade">
+          <div class="numbertext">3/4</div>
+          <img src="./Kuvat/quieres.png" alt="quieres-koira" style="width: 100%" />
+          <div class="text">Tarjoava koira</div>
+        </div>
+
+        <div class="mySlides2 fade">
+          <div class="numbertext">4/4</div>
+          <img src="./Kuvat/KFC-koira.png" alt="KFC-koira" style="width: 100%" />
+          <div class="text">KFC-koira</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot2" onclick="currentSlide(1)"></span>
+        <span class="dot2" onclick="currentSlide(2)"></span>
+        <span class="dot2" onclick="currentSlide(3)"></span>
+        <span class="dot2" onclick="currentSlide(4)"></span>
+      </div>
+
+      <script>
+  let slideIndex1 = 1;
+  showSlides1(slideIndex1);
+
+  function plusSlides1(n) {
+    showSlides1(slideIndex1 += n);
+  }
+
+  function currentSlide1(n) {
+    showSlides1(slideIndex1 = n);
+  }
+
+  function showSlides1(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides1");
+    let dots = document.getElementsByClassName("dot1");
+    if (n > slides.length) { slideIndex1 = 1; }
+    if (n < 1) { slideIndex1 = slides.length; }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex1 - 1].style.display = "block";
+    dots[slideIndex1 - 1].className += " active";
+  }
+
+  let slideIndex2 = 1;
+  showSlides2(slideIndex2);
+
+  function plusSlides2(n) {
+    showSlides2(slideIndex2 += n);
+  }
+
+  function currentSlide2(n) {
+    showSlides2(slideIndex2 = n);
+  }
+
+  function showSlides2(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides2");
+    let dots = document.getElementsByClassName("dot2");
+    if (n > slides.length) { slideIndex2 = 1; }
+    if (n < 1) { slideIndex2 = slides.length; }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex2 - 1].style.display = "block";
+    dots[slideIndex2 - 1].className += " active";
+  }
+  </script>
+
+  </main>
+
+    <footer>© Copyright 2025 Leevi Saajoranta</footer>
+  </body>
+</html>
